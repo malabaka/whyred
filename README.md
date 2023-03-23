@@ -41,15 +41,7 @@ Design pattern
 java-design-patterns : Design patterns implemented in Java.
 Framework
 spring-boot : Spring Boot makes it easy to create stand-alone, production-grade Spring-based applications, and the built-in web server lets you run projects like normal Java programs. In addition, most Spring Boot projects require only a small amount of configuration, which is different from Spring reconfiguration.
-spring-cloud-alibaba : Spring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components required to develop distributed applications, making it easy for you to develop your applications using Spring Cloud.
-flink : Apache Flink is an open source stream processing framework with powerful stream- and batch-processing capabilities.
-Sentinel : A lightweight powerful flow control component enabling reliability and monitoring for microservices.
-dubbo : Apache Dubbo is a high-performance, java based, open source RPC framework.
-spring-cloud-kubernetes : Kubernetes integration with Spring Cloud Discovery Client, Configuration, etc...
-seata : Seata is an easy-to-use, high-performance, open source distributed transaction solution.
-skywalking : SkyWalking: an APM(application performance monitor) system, especially designed for microservices, cloud native and container-based (Docker, Kubernetes, Mesos) architectures.
-Software/System
-Develop
+spring-cloud-alibaba : Spring Cloud Alibaba provides a one-stop solution for distributed application development. It contains all the components required to develop distri
 elasticsearch : Open Source, Distributed, RESTful Search Engine.
 zipkin : Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in service architectures. Features include both the collection and lookup of this data.
 nacos ：Nacos is committed to help you discover, configure, and manage your microservices. It provides a set of simple and useful features enabling you to realize dynamic service discovery, service configuration, service metadata and traffic management.
