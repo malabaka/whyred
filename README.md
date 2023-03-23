@@ -1,24 +1,9 @@
-# whyred在AndroidManifest.xml文件中添加权限声明：
-xml
-复制代码
-<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-在AndroidManifest.xml文件中注册BroadcastReceiver
-xml
-复制代码
-<receiver android:name=".BootBroadcastReceiver">
-    <intent-filter>
-        <action android:name="android.intent.action.BOOT_COMPLETED" />
-    </intent-filter>
-</receiver>
-创建名为BootBroadcastReceiver的BroadcastReceiver，并重写onReceive()方法，在该方法内实现APP的自启动逻辑。
-java
-复制代码
-public class BootBroadcastReceiver extends BroadcastReceiver {
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
-            // TODO: 实现 APP 的自启动逻辑
-        }
-    }
-}
-需要注意的是，自启动功能会影响手机的性能和电量消耗，建议谨慎使用
+修改Github 给你项目设定的语言
+
+比如你有一个php项目，如果里面有过多的js,css，html代码，github就会给你的项目设定的语言为js,css,html, 而不是你的项目语言
+
+那怎么来设置呢？ 只需要建立一个文件 .gitattrbutes
+
+里面添加 *.js lingist-language=php
+
+后面的php改为你项目的语言，这个可以添加多行 然后上传到项目的根目录，那么Github就会自动更改为你设定的语言
