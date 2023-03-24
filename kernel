@@ -1,10 +1,44 @@
-#xposed模块# #那些好用的magisk模块#
-【应用名称】：KModule
-【应用版本】：2.6.6
-【应用大小】：3MB
-【适用平台】：Android
-【版本说明】：修复若干bug
-【官方介绍】：可以解锁很多很多很多应用的会员功能，具体有什么自己看一下软件介绍吧~
-【使用方法】：勾选对应软件作用域
-【下载地址】：ht删tps://sourl.c删n/5QVTDr
-【应用截图】：我不用 所以我没有（叉腰）[受虐滑稽][受虐滑稽][受虐滑稽]
+
+import java.util.Scanner;
+
+public class StockAnalysis {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the name of the stock: ");
+        String stockName = scanner.nextLine();
+
+        System.out.print("Enter the opening price of the stock: ");
+        double openingPrice = scanner.nextDouble();
+
+        System.out.print("Enter the closing price of the stock: ");
+        double closingPrice = scanner.nextDouble();
+
+        System.out.print("Enter the highest price of the stock: ");
+        double highestPrice = scanner.nextDouble();
+
+        System.out.print("Enter the lowest price of the stock: ");
+        double lowestPrice = scanner.nextDouble();
+
+        System.out.println("Stock Analysis:");
+        System.out.println("Stock Name: " + stockName);
+        System.out.println("Opening Price: " + openingPrice);
+        System.out.println("Closing Price: " + closingPrice);
+        System.out.println("Highest Price: " + highestPrice);
+        System.out.println("Lowest Price: " + lowestPrice);
+
+        double priceDifference = closingPrice - openingPrice;
+        double percentageChange = priceDifference / openingPrice * 100;
+
+        System.out.println("Price Difference: " + priceDifference);
+        System.out.println("Percentage Change: " + percentageChange + "%");
+
+        if (closingPrice > openingPrice) {
+            System.out.println("The stock has increased in value.");
+        } else if (closingPrice < openingPrice) {
+            System.out.println("The stock has decreased in value.");
+        } else {
+            System.out.println("The stock has remained unchanged.");
+        }
+    }
+}
