@@ -13,4 +13,20 @@ hutool : A set of tools that keep Java sweet.
 Database
 redisson ：Redisson - Redis Java client with features of In-Memory Data Grid. Supports over 30 objects and services: Set, Multimap, SortedSet, Map, List, Queue, Deque, Semaphore, Lock, AtomicLong, Map Reduce, Publish / Subscribe, Bloom filter, Spring Cache, Tomcat, Scheduler, JCache API, Hibernate, RPC. Introduction to the Redisson project.
 Others
-thingsboard : Open-source IoT Platform - Device management, data collection, processing and visualization.
+thingsboard : Open-source IoT Platform - Device management, data collection, processing and visualization.import java.util.Scanner;
+
+public class AddTwoNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+
+        int sum = num1 + num2;
+
+        System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum + ".");
+    }
+}
