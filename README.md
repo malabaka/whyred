@@ -14,4 +14,3 @@ Database
 redisson ：Redisson - Redis Java client with features of In-Memory Data Grid. Supports over 30 objects and services: Set, Multimap, SortedSet, Map, List, Queue, Deque, Semaphore, Lock, AtomicLong, Map Reduce, Publish / Subscribe, Bloom filter, Spring Cache, Tomcat, Scheduler, JCache API, Hibernate, RPC. Introduction to the Redisson project.
 Others
 thingsboard : Open-source IoT Platform - Device management, data collection, processing and visualization.
-Introduction
